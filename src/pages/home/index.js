@@ -8,6 +8,9 @@ const HomePage = () => {
         <li>
           <Link to={"/qr-code"}>QR Code Component</Link>
         </li>
+        <li>
+          <Link to={"/nft-component"}>NFT Card Component</Link>
+        </li>
       </ul>
     </div>
   );

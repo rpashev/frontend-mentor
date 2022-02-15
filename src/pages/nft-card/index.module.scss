@@ -1,0 +1,131 @@
+$soft-blue: hsl(215, 51%, 70%);
+$cyan: hsl(178, 100%, 50%);
+$blue-main-bg: hsl(217, 54%, 11%);
+$blue-card-bg: hsl(216, 50%, 16%);
+$blue-line: hsl(215, 32%, 27%);
+$white: hsl(0, 0%, 100%);
+
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+.page {
+  font-family: "Outfit", sans-serif;
+  background-color: $blue-main-bg;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .card {
+    width: 320px;
+    min-width: 280px;
+    border-radius: 20px;
+    padding: 1.25rem;
+    background-color: $blue-card-bg;
+    color: $soft-blue;
+
+    .img-container {
+      width: 100%;
+      position: relative;
+      .img-nft {
+        width: 100%;
+        display: block;
+        border-radius: 8px;
+      }
+      .overlay {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background-color: hsla(178, 100%, 50%, 0.4);
+        opacity: 0;
+        border-radius: 8px;
+        transition: all 0.3s ease-out;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 3rem;
+          fill: white;
+        }
+      }
+    }
+
+    .img-container:hover .overlay {
+      opacity: 1;
+      cursor: pointer;
+    }
+
+    h3 {
+      color: $white;
+      font-weight: 600;
+    }
+
+    .card-body {
+      p {
+        font-weight: 300;
+      }
+
+      .stats {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 1.5rem 0;
+
+        .stats-ethereum,
+        .stats-time {
+          display: flex;
+          align-items: center;
+        }
+
+        .stats-ethereum span {
+          color: $cyan;
+          font-weight: 600;
+        }
+
+        .stats-time span {
+          font-weight: 300;
+        }
+
+        span {
+          margin-left: 0.5rem;
+          font-size: 0.9rem;
+        }
+      }
+    }
+
+    hr {
+      color: $blue-line;
+    }
+
+    .card-footer {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      .avatar-container {
+        width: 2rem;
+        margin-right: 1rem;
+        img {
+          border-radius: 50%;
+          border: 1px solid $white;
+          width: 100%;
+        }
+      }
+
+      span {
+        color: $white;
+      }
+    }
+
+    a {
+      all: unset;
+      transition: all 0.3s ease-out;
+    }
+
+    a:hover {
+      color: $cyan;
+      cursor: pointer;
+    }
+  }
+}

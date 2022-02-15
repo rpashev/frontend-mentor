@@ -5,30 +5,39 @@ $light-gray: hsl(212, 45%, 89%);
 $grayish-blue: hsl(220, 15%, 55%);
 $dark-blue: hsl(218, 44%, 22%);
 
-.card {
-  width: 320px;
-  min-width: 280px;
-  background-color: $white;
-  padding: 1rem;
-  border-radius: 20px;
-  font-family: "Outfit", sans-serif;
-  text-align: center;
-  .img-container {
-    width: 100%;
-    img {
+.page {
+  background-color: $light-gray;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .card {
+    width: 320px;
+    min-width: 280px;
+    background-color: $white;
+    padding: 1rem;
+    border-radius: 20px;
+    font-family: "Outfit", sans-serif;
+    text-align: center;
+    .img-container {
       width: 100%;
-      border-radius: 12px;
+      img {
+        width: 100%;
+        border-radius: 12px;
+      }
     }
-  }
-  .body {
-    padding: 0 0.5rem;
-    h2 {
-      color: $dark-blue;
-      font-weight: 700;
-      font-size: 1.4rem;
-    }
-    p {
-      color: $grayish-blue;
+    .body {
+      padding: 0 0.5rem;
+      h2 {
+        color: $dark-blue;
+        font-weight: 700;
+        font-size: 1.4rem;
+      }
+      p {
+        color: $grayish-blue;
+      }
     }
   }
 }
