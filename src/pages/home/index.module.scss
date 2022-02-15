@@ -1,0 +1,21 @@
+.home {
+  background-color: hsl(218, 44%, 22%);
+  min-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    li {
+      margin: 1rem;
+      a {
+        text-decoration: none;
+        font: inherit;
+        color: #ffffff;
+      }
+    }
+  }
+}
