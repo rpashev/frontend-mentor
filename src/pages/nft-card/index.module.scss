@@ -101,7 +101,7 @@ $white: hsl(0, 0%, 100%);
 
     .card-footer {
       display: flex;
-      justify-content: start;
+      justify-content: flex-start;
       align-items: center;
       .avatar-container {
         width: 2rem;
