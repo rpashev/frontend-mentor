@@ -11,6 +11,9 @@ const HomePage = () => {
         <li>
           <Link to={"/nft-component"}>NFT Card Component</Link>
         </li>
+        <li>
+          <Link to={"/order-summary"}>Order Summary Component</Link>
+        </li>
       </ul>
     </div>
   );
