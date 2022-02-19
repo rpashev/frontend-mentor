@@ -3,6 +3,7 @@ import HomePage from "./pages/home";
 import NftCard from "./pages/nft-card";
 import OrderSummary from "./pages/order-summary";
 import QRCode from "./pages/qr-code";
+import StatsPreview from "./pages/stats-preview-card";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/qr-code" element={<QRCode />} />
         <Route path="/nft-component" element={<NftCard />} />
         <Route path="/order-summary" element={<OrderSummary />} />
+        <Route path="/stats-preview" element={<StatsPreview />} />
         <Route path="*" element={<Navigate to={"/"} />} />
       </Routes>
     </BrowserRouter>
