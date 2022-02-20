@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+$bright-orange: hsl(31, 77%, 52%);
+$dark-cyan: hsl(184, 100%, 22%);
+$very-dark-cyan: hsl(179, 100%, 13%);
+$transparent-white: hsla(0, 0%, 100%, 0.75); //paragraphs
+$very-light-gray: hsl(0, 0%, 95%); //bg, headings, buttons
+
+.card {
+  width: 320px;
+  max-width: 320px;
+  height: 480px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-shrink: 1;
+  padding: 2.5rem;
+  position: relative;
+  font-family: "Lexend Deca";
+
+  p {
+    color: $transparent-white;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    width: 80%;
+  }
+
+  h1 {
+    font-family: "Big Shoulders";
+    color: $very-light-gray;
+    letter-spacing: -1px;
+  }
+
+  button {
+    background-color: $very-light-gray;
+    border: 2px solid $very-light-gray;
+    border-radius: 25px;
+    padding: 0.75rem 1.75rem;
+    font: inherit;
+    position: absolute;
+    bottom: 3rem;
+  }
+
+  button:hover {
+    cursor: pointer;
+    background-color: transparent;
+    color: $very-light-gray;
+  }
+}
+
+.sedans {
+  background-color: $bright-orange;
+  button {
+    color: $bright-orange;
+  }
+}
+
+.suvs {
+  background-color: $dark-cyan;
+  button {
+    color: $dark-cyan;
+  }
+}
+
+.luxury {
+  background-color: $very-dark-cyan;
+  button {
+    color: $very-dark-cyan;
+  }
+}
+
+@media (max-width: 760px) {
+  .card {
+      width: 100%;
+  }
+}
