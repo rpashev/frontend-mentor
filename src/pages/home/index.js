@@ -17,6 +17,11 @@ const HomePage = () => {
         <li>
           <Link to={"/stats-preview"}>Stats Preview Component</Link>
         </li>
+        <li>
+          <Link to={"/three-column-preview"}>
+            Three Column Preview Component
+          </Link>
+        </li>
       </ul>
     </div>
   );
