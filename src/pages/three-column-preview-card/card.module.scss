@@ -39,6 +39,7 @@ $very-light-gray: hsl(0, 0%, 95%); //bg, headings, buttons
     font: inherit;
     position: absolute;
     bottom: 3rem;
+    transition: all 0.2s ease-out;
   }
 
   button:hover {

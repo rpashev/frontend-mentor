@@ -22,6 +22,9 @@ const HomePage = () => {
             Three Column Preview Component
           </Link>
         </li>
+        <li>
+          <Link to={"/profile-card"}>Profile Card Component</Link>
+        </li>
       </ul>
     </div>
   );
