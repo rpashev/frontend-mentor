@@ -25,6 +25,9 @@ const HomePage = () => {
         <li>
           <Link to={"/profile-card"}>Profile Card Component</Link>
         </li>
+        <li>
+          <Link to={"/faq-accordion"}>FAQ Accordion Component</Link>
+        </li>
       </ul>
     </div>
   );

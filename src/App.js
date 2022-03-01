@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import FaqAccordion from "./pages/faq-accordion";
 import HomePage from "./pages/home";
 import NftCard from "./pages/nft-card";
 import OrderSummary from "./pages/order-summary";
@@ -18,6 +19,7 @@ function App() {
         <Route path="/stats-preview" element={<StatsPreview />} />
         <Route path="/three-column-preview" element={<ThreeColumnPreview />} />
         <Route path="/profile-card" element={<ProfileCard />} />
+        <Route path="/faq-accordion" element={<FaqAccordion />} />
         <Route path="*" element={<Navigate to={"/"} />} />
       </Routes>
     </BrowserRouter>
