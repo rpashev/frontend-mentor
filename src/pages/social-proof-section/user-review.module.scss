@@ -1,0 +1,56 @@
+$very-dark-magenta: hsl(300, 43%, 22%);
+$soft-pink: hsl(333, 80%, 67%);
+$dark-grayish-magenta: hsl(303, 10%, 53%);
+$light-grayish-magenta: hsl(300, 24%, 96%);
+$white: hsl(0, 0%, 100%);
+
+.review {
+  background-color: $very-dark-magenta;
+  padding: 2rem;
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: column;
+  border-radius: 8px;
+  max-width: 320px;
+
+  .person {
+    display: flex;
+    align-items: center;
+
+    .name {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+
+      h2,
+      span {
+        color: $light-grayish-magenta;
+        font-size: 0.7rem;
+        font-weight: 700;
+      }
+
+      span {
+        color: hsl(300, 43%, 49%);
+      }
+    }
+
+    img {
+      border-radius: 50%;
+      width: 3rem;
+      margin-right: 1rem;
+    }
+  }
+
+  p {
+    color: $light-grayish-magenta;
+    font-size: 0.7rem;
+    opacity: 0.9;
+  }
+}
+
+@media (max-width: 1300px) {
+  .review {
+    padding: 1.5rem 1rem;
+  }
+}

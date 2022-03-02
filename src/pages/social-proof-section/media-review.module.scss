@@ -1,0 +1,38 @@
+$light-grayish-magenta: hsl(300, 24%, 96%);
+$very-dark-magenta: hsl(300, 43%, 22%);
+$dark-grayish-magenta: hsl(303, 10%, 53%);
+
+.media-review {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: $light-grayish-magenta;
+  padding: 1rem 1.5rem;
+
+  .stars {
+    display: flex;
+    gap: 0.5rem;
+    margin-right: 1.5rem;
+
+    img {
+      display: block;
+    }
+  }
+
+  h2 {
+    font-size: 0.75rem;
+    color: $very-dark-magenta;
+  }
+}
+
+@media (max-width: 1300px) {
+  .media-review {
+    align-self: stretch;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    .stars {
+      margin-right: 0;
+    }
+  }
+}
