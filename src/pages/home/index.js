@@ -28,6 +28,9 @@ const HomePage = () => {
         <li>
           <Link to={"/faq-accordion"}>FAQ Accordion Component</Link>
         </li>
+        <li>
+          <Link to={"/social-proof"}>Social Proof Section</Link>
+        </li>
       </ul>
     </div>
   );

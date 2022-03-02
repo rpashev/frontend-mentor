@@ -5,6 +5,7 @@ import NftCard from "./pages/nft-card";
 import OrderSummary from "./pages/order-summary";
 import ProfileCard from "./pages/profile-card";
 import QRCode from "./pages/qr-code";
+import SocialProof from "./pages/social-proof-section";
 import StatsPreview from "./pages/stats-preview-card";
 import ThreeColumnPreview from "./pages/three-column-preview-card";
 
@@ -20,6 +21,7 @@ function App() {
         <Route path="/three-column-preview" element={<ThreeColumnPreview />} />
         <Route path="/profile-card" element={<ProfileCard />} />
         <Route path="/faq-accordion" element={<FaqAccordion />} />
+        <Route path="/social-proof" element={<SocialProof />} />
         <Route path="*" element={<Navigate to={"/"} />} />
       </Routes>
     </BrowserRouter>

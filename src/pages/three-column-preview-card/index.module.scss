@@ -12,7 +12,6 @@ $very-light-gray: hsl(0, 0%, 95%); //bg, headings, buttons
   .list {
     display: flex;
     flex-wrap: wrap;
-    align-content: stretch;
     justify-content: center;
     border-radius: 8px;
     overflow: hidden;
