@@ -9,18 +9,21 @@ $dark-blue: hsl(218, 44%, 22%);
   background-color: $light-gray;
   width: 100%;
   min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  place-items: center;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
 
   .card {
-    width: 320px;
+    max-width: 320px;
     min-width: 280px;
     background-color: $white;
-    padding: 1rem;
+    padding: 1rem 1rem 2.5rem 1rem;
     border-radius: 20px;
     font-family: "Outfit", sans-serif;
     text-align: center;
+
     .img-container {
       width: 100%;
       img {
@@ -34,6 +37,7 @@ $dark-blue: hsl(218, 44%, 22%);
         color: $dark-blue;
         font-weight: 700;
         font-size: 1.4rem;
+        margin: 1rem 0;
       }
       p {
         color: $grayish-blue;

@@ -17,7 +17,7 @@ $transparent-white-stats: hsla(0, 0%, 100%, 0.6);
   line-height: 1.3;
 
   .card {
-    width: 1080px;
+    max-width: 1080px;
     min-width: 280px;
     display: flex;
     align-items: center;
@@ -41,6 +41,7 @@ $transparent-white-stats: hsla(0, 0%, 100%, 0.6);
       .achievements {
         padding: 0;
         margin: 0;
+        margin-top: 4rem;
         display: flex;
         justify-content: space-between;
         list-style: none;
@@ -68,6 +69,7 @@ $transparent-white-stats: hsla(0, 0%, 100%, 0.6);
       h1 {
         font-size: 2.4rem;
         margin-top: 0;
+        margin-bottom: 1.5rem;
         span {
           color: $soft-violet;
         }

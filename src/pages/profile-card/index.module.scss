@@ -25,7 +25,7 @@ $dark-gray: hsl(0, 0%, 59%);
 }
 
 .card {
-  width: 350px;
+  max-width: 350px;
   min-width: 320px;
   height: 380px;
   background-color: white;

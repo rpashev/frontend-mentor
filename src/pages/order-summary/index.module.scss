@@ -19,7 +19,7 @@ $dark-blue: hsl(223, 47%, 23%);
   line-height: 1.5;
 
   .card {
-    width: 380px;
+    max-width: 380px;
     min-width: 280px;
     display: flex;
     flex-direction: column;
@@ -44,6 +44,7 @@ $dark-blue: hsl(223, 47%, 23%);
           color: $dark-blue;
           font-size: 1.4rem;
           margin-top: 1.75rem;
+          margin-bottom: 1rem;
         }
         p {
           font-size: 0.9rem;

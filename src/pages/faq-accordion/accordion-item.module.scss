@@ -1,0 +1,29 @@
+$light-grayish-blue: hsl(240, 5%, 91%); //dividers
+
+.item {
+  border-bottom: 1px solid $light-grayish-blue;
+  padding-bottom: 1rem;
+
+  h2 {
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 400;
+  }
+  p {
+    width: 80%;
+    font-size: 0.9rem;
+    animation-name: slideDown;
+    animation-duration: 0.2s;
+    animation-timing-function: linear;
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-5px);
+  }
+
+  100% {
+    transform: translate(0);
+  }
+}

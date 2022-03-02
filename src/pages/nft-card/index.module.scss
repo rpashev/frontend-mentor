@@ -17,7 +17,7 @@ $white: hsl(0, 0%, 100%);
   justify-content: center;
 
   .card {
-    width: 320px;
+    max-width: 320px;
     min-width: 280px;
     border-radius: 20px;
     padding: 1.25rem;
@@ -60,6 +60,7 @@ $white: hsl(0, 0%, 100%);
     h3 {
       color: $white;
       font-weight: 600;
+      margin: 1rem 0;
     }
 
     .card-body {
@@ -96,13 +97,17 @@ $white: hsl(0, 0%, 100%);
     }
 
     hr {
+      border: none;
+      height: 1px;
       color: $blue-line;
+      background-color: $blue-line;
     }
 
     .card-footer {
       display: flex;
       justify-content: flex-start;
       align-items: center;
+      margin-top: 1rem;
       .avatar-container {
         width: 2rem;
         margin-right: 1rem;

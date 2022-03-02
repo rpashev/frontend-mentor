@@ -7,13 +7,12 @@ $transparent-white: hsla(0, 0%, 100%, 0.75); //paragraphs
 $very-light-gray: hsl(0, 0%, 95%); //bg, headings, buttons
 
 .card {
-  width: 320px;
   max-width: 320px;
-  height: 480px;
+  min-width: 280px;
+  height: 460px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  flex-shrink: 1;
   padding: 2.5rem;
   position: relative;
   font-family: "Lexend Deca";
@@ -29,6 +28,7 @@ $very-light-gray: hsl(0, 0%, 95%); //bg, headings, buttons
     font-family: "Big Shoulders";
     color: $very-light-gray;
     letter-spacing: -1px;
+    margin: 1.5rem 0;
   }
 
   button {
@@ -70,8 +70,8 @@ $very-light-gray: hsl(0, 0%, 95%); //bg, headings, buttons
   }
 }
 
-@media (max-width: 760px) {
-  .card {
-      width: 100%;
-  }
-}
+// @media (max-width: 760px) {
+//   .card {
+//     width: 95%;
+//   }
+// }
