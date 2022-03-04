@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import ArticlePreview from "./pages/article-preview";
 import FaqAccordion from "./pages/faq-accordion";
 import HomePage from "./pages/home";
 import NftCard from "./pages/nft-card";
@@ -22,6 +23,7 @@ function App() {
         <Route path="/profile-card" element={<ProfileCard />} />
         <Route path="/faq-accordion" element={<FaqAccordion />} />
         <Route path="/social-proof" element={<SocialProof />} />
+        <Route path="/article-preview" element={<ArticlePreview />} />
         <Route path="*" element={<Navigate to={"/"} />} />
       </Routes>
     </BrowserRouter>

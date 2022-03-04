@@ -31,6 +31,9 @@ const HomePage = () => {
         <li>
           <Link to={"/social-proof"}>Social Proof Section</Link>
         </li>
+        <li>
+          <Link to={"/article-preview"}>Article Preview Component</Link>
+        </li>
       </ul>
     </div>
   );
