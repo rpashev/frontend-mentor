@@ -34,6 +34,9 @@ const HomePage = () => {
         <li>
           <Link to={"/article-preview"}>Article Preview Component</Link>
         </li>
+        <li>
+          <Link to={"/base-apparel"}>Base Apparel Component</Link>
+        </li>
       </ul>
     </div>
   );
