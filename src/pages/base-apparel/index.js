@@ -3,6 +3,7 @@ import logo from "../../assets/base-apparel-coming-soon-master/images/logo.svg";
 import photo from "../../assets/base-apparel-coming-soon-master/images/hero-desktop.jpg";
 import photoMobile from "../../assets/base-apparel-coming-soon-master/images/hero-mobile.jpg";
 import arrow from "../../assets/base-apparel-coming-soon-master/images/icon-arrow.svg";
+import errorIcon from "../../assets/base-apparel-coming-soon-master/images/icon-error.svg";
 
 import { useState } from "react";
 
@@ -53,6 +54,13 @@ const BaseApparel = () => {
                 <img src={arrow} alt="arrow"></img>
               </button>
               {error && (
+                <img
+                  src={errorIcon}
+                  alt="error"
+                  className={styles["error-icon"]}
+                ></img>
+              )}
+              {error && (
                 <p className={styles.error}>Please provide a valid email!</p>
               )}
               {success && (
@@ -61,7 +69,11 @@ const BaseApparel = () => {
             </div>
           </div>
           <img className={styles.photo} src={photo} alt="hero"></img>
-          <img className={styles.photoMobile} src={photoMobile} alt="hero mobile"></img>
+          <img
+            className={styles.photoMobile}
+            src={photoMobile}
+            alt="hero mobile"
+          ></img>
         </div>
       </div>
     </div>
