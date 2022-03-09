@@ -8,6 +8,7 @@ import NftCard from "./pages/nft-card";
 import OrderSummary from "./pages/order-summary";
 import ProfileCard from "./pages/profile-card";
 import QRCode from "./pages/qr-code";
+import SinglePriceGrid from "./pages/single-price-grid";
 import SocialProof from "./pages/social-proof-section";
 import StatsPreview from "./pages/stats-preview-card";
 import ThreeColumnPreview from "./pages/three-column-preview-card";
@@ -28,6 +29,7 @@ function App() {
         <Route path="/article-preview" element={<ArticlePreview />} />
         <Route path="/base-apparel" element={<BaseApparel />} />
         <Route path="/intro-signup" element={<IntroSignup />} />
+        <Route path="/single-price-grid" element={<SinglePriceGrid />} />
         <Route path="*" element={<Navigate to={"/"} />} />
       </Routes>
     </BrowserRouter>

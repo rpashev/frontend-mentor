@@ -40,6 +40,9 @@ const HomePage = () => {
         <li>
           <Link to={"/intro-signup"}>Intro Signup Component</Link>
         </li>
+        <li>
+          <Link to={"/single-price-grid"}>Single Price Grid Component</Link>
+        </li>
       </ul>
     </div>
   );
