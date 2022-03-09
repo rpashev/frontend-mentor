@@ -3,6 +3,7 @@ import ArticlePreview from "./pages/article-preview";
 import BaseApparel from "./pages/base-apparel";
 import FaqAccordion from "./pages/faq-accordion";
 import HomePage from "./pages/home";
+import HuddleLandingPage from "./pages/huddle-landing-page";
 import IntroSignup from "./pages/intro-signup";
 import NftCard from "./pages/nft-card";
 import OrderSummary from "./pages/order-summary";
@@ -32,6 +33,7 @@ function App() {
         <Route path="/intro-signup" element={<IntroSignup />} />
         <Route path="/single-price-grid" element={<SinglePriceGrid />} />
         <Route path="/ping-single-column" element={<PingSingleColumn />} />
+        <Route path="/huddle-landing-page" element={<HuddleLandingPage />} />
         <Route path="*" element={<Navigate to={"/"} />} />
       </Routes>
     </BrowserRouter>

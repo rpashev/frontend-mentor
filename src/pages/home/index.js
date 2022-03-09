@@ -46,6 +46,9 @@ const HomePage = () => {
         <li>
           <Link to={"/ping-single-column"}>Ping Single Column Component</Link>
         </li>
+        <li>
+          <Link to={"/huddle-landing-page"}>Huddle Landing Page</Link>
+        </li>
       </ul>
     </div>
   );
