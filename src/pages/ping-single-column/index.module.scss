@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+
+$blue: hsl(223, 87%, 63%);
+$pale-blue: hsl(223, 100%, 88%);
+$light-red: hsl(354, 100%, 66%);
+$gray: hsl(0, 0%, 59%);
+$very-dark-blue: hsl(209, 33%, 12%);
+
+.page {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Libre Franklin", sans-serif;
+  line-height: 1.5;
+  background-color: $pale-blue;
+}
+
+.card {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  padding: 2rem 0;
+  max-width: 1200px;
+
+  h1 {
+    color: $gray;
+    font-weight: 300;
+    margin-bottom: 0.5rem;
+
+    span {
+      color: $very-dark-blue;
+      font-weight: 700;
+    }
+  }
+
+  h5 {
+    color: $gray;
+    font-weight: 600;
+    margin-bottom: 1.25rem;
+  }
+
+  form {
+    display: flex;
+    gap: 0.75rem;
+    margin-bottom: 3.5rem;
+
+    input {
+      padding: 0.6rem 1.5rem;
+      border-radius: 100px;
+      width: 20rem;
+      border: 2px solid rgba($gray, 0.3);
+      font: inherit;
+      font-size: 0.95rem;
+      color: $very-dark-blue;
+
+      &:focus {
+        outline: none;
+        border: 2px solid rgba($gray, 0.7);
+      }
+
+      &::placeholder {
+        color: rgba($gray, 0.8);
+        font-size: 0.9rem;
+      }
+
+      //   &:invalid {
+      //     border: 2px solid red;
+      //   }
+    }
+
+    button {
+      padding: 0.5rem 2.5rem;
+      border-radius: 100px;
+      border: none;
+      background-color: $blue;
+      font: inherit;
+      color: white;
+      font-size: 0.8rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+
+      &:focus,
+      &:hover {
+        background-color: darken($blue, 10%);
+      }
+    }
+  }
+}
+
+.logo {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.dashboard {
+  display: block;
+  width: 30rem;
+}
+
+.footer {
+  margin-top: 3rem;
+  .socials {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+
+    img {
+      display: block;
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+  }
+
+  p {
+    font-size: 0.75rem;
+    color: $gray;
+  }
+}
+
+@media (max-width: 41em) {
+  .card {
+    padding: 1.5rem 1rem;
+    text-align: center;
+    width: 95%;
+
+    form {
+      flex-direction: column;
+      width: 100%;
+      max-width: 20rem;
+      input {
+        width: 100%;
+      }
+    }
+  }
+
+  .dashboard {
+    width: 100%;
+  }
+}
