@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+
+$violet: hsl(257, 40%, 49%);
+$soft-magenta: hsl(300, 69%, 71%);
+
+.page {
+  width: 100%;
+  min-height: 100vh;
+  font-family: "Open Sans";
+  background: url("../../assets/huddle-landing-page-with-single-introductory-section-master/images/bg-desktop.svg"),
+    $violet;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 3rem 5rem 3rem 3rem;
+  max-width: 2000px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  color: white;
+}
+
+.logo {
+  align-self: flex-start;
+}
+
+.content {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1400px;
+}
+
+.dashboard {
+  display: block;
+  width: 53%;
+}
+
+.prompt {
+  width: 40%;
+  margin-top: 3rem;
+
+  h1 {
+    font-family: "Poppins";
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    color: rgba(white, 0.85);
+  }
+
+  button {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 3rem;
+    font: inherit;
+    color: $violet;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: all 0.2s;
+
+    &:focus,
+    &:hover {
+      outline: none;
+      background-color: darken(white, 15%);
+    }
+  }
+}
+
+.socials {
+  align-self: flex-end;
+  margin-top: auto;
+  display: flex;
+  gap: 1rem;
+  max-width: 1400px;
+
+  img {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+@media (max-width: 75em) {
+  .page {
+    align-self: flex-start;
+    min-height: auto;
+  }
+
+  .prompt {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 63em) {
+  .page {
+    text-align: center;
+    align-items: center;
+    padding: 1.5rem;
+  }
+
+  .logo {
+    align-self: center;
+    width: 12rem;
+  }
+
+  .content {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .dashboard,
+  .prompt {
+    width: 100%;
+    max-width: 25rem;
+  }
+
+  .prompt {
+    h1 {
+      font-size: 1.7rem;
+    }
+
+    button {
+      margin: 0 auto;
+      margin-top: 2rem;
+      min-width: 12rem;
+    }
+  }
+
+  .socials {
+    margin-top: 4rem;
+    align-self: center;
+  }
+}
