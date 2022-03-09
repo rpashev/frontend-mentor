@@ -43,6 +43,9 @@ const HomePage = () => {
         <li>
           <Link to={"/single-price-grid"}>Single Price Grid Component</Link>
         </li>
+        <li>
+          <Link to={"/ping-single-column"}>Ping Single Column Component</Link>
+        </li>
       </ul>
     </div>
   );

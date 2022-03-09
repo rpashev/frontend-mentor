@@ -6,6 +6,7 @@ import HomePage from "./pages/home";
 import IntroSignup from "./pages/intro-signup";
 import NftCard from "./pages/nft-card";
 import OrderSummary from "./pages/order-summary";
+import PingSingleColumn from "./pages/ping-single-column";
 import ProfileCard from "./pages/profile-card";
 import QRCode from "./pages/qr-code";
 import SinglePriceGrid from "./pages/single-price-grid";
@@ -30,6 +31,7 @@ function App() {
         <Route path="/base-apparel" element={<BaseApparel />} />
         <Route path="/intro-signup" element={<IntroSignup />} />
         <Route path="/single-price-grid" element={<SinglePriceGrid />} />
+        <Route path="/ping-single-column" element={<PingSingleColumn />} />
         <Route path="*" element={<Navigate to={"/"} />} />
       </Routes>
     </BrowserRouter>
