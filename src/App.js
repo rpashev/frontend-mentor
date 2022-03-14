@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import ArticlePreview from "./pages/article-preview";
 import BaseApparel from "./pages/base-apparel";
 import FaqAccordion from "./pages/faq-accordion";
+import FourCardFeature from "./pages/four-card-feature";
 import HomePage from "./pages/home";
 import HuddleLandingPage from "./pages/huddle-landing-page";
 import IntroSignup from "./pages/intro-signup";
@@ -34,6 +35,7 @@ function App() {
         <Route path="/single-price-grid" element={<SinglePriceGrid />} />
         <Route path="/ping-single-column" element={<PingSingleColumn />} />
         <Route path="/huddle-landing-page" element={<HuddleLandingPage />} />
+        <Route path="/four-card-feature" element={<FourCardFeature />} />
         <Route path="*" element={<Navigate to={"/"} />} />
       </Routes>
     </BrowserRouter>

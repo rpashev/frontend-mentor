@@ -49,6 +49,9 @@ const HomePage = () => {
         <li>
           <Link to={"/huddle-landing-page"}>Huddle Landing Page</Link>
         </li>
+        <li>
+          <Link to={"/four-card-feature"}>Four Card Feature Section</Link>
+        </li>
       </ul>
     </div>
   );
