@@ -52,6 +52,9 @@ const HomePage = () => {
         <li>
           <Link to={"/four-card-feature"}>Four Card Feature Section</Link>
         </li>
+        <li>
+          <Link to={"/advice-generator"}>Advice Generator App</Link>
+        </li>
       </ul>
     </div>
   );

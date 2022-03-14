@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import AdviceGenerator from "./pages/advice-generator";
 import ArticlePreview from "./pages/article-preview";
 import BaseApparel from "./pages/base-apparel";
 import FaqAccordion from "./pages/faq-accordion";
@@ -36,6 +37,7 @@ function App() {
         <Route path="/ping-single-column" element={<PingSingleColumn />} />
         <Route path="/huddle-landing-page" element={<HuddleLandingPage />} />
         <Route path="/four-card-feature" element={<FourCardFeature />} />
+        <Route path="/advice-generator" element={<AdviceGenerator />} />
         <Route path="*" element={<Navigate to={"/"} />} />
       </Routes>
     </BrowserRouter>
