@@ -15,6 +15,7 @@ import QRCode from "./pages/qr-code";
 import SinglePriceGrid from "./pages/single-price-grid";
 import SocialProof from "./pages/social-proof-section";
 import StatsPreview from "./pages/stats-preview-card";
+import SunnysidePage from "./pages/sunnyside-landing-page";
 import ThreeColumnPreview from "./pages/three-column-preview-card";
 
 function App() {
@@ -38,6 +39,7 @@ function App() {
         <Route path="/huddle-landing-page" element={<HuddleLandingPage />} />
         <Route path="/four-card-feature" element={<FourCardFeature />} />
         <Route path="/advice-generator" element={<AdviceGenerator />} />
+        <Route path="/sunnyside" element={<SunnysidePage />} />
         <Route path="*" element={<Navigate to={"/"} />} />
       </Routes>
     </BrowserRouter>

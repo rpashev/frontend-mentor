@@ -13,7 +13,6 @@ const AdviceGenerator = () => {
     let result;
 
     setError(null);
-    console.log("clicked")
     try {
       response = await fetch("https://api.adviceslip.com/advice");
       if (response.ok) {

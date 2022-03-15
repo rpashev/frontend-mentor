@@ -55,6 +55,9 @@ const HomePage = () => {
         <li>
           <Link to={"/advice-generator"}>Advice Generator App</Link>
         </li>
+        <li>
+          <Link to={"/sunnyside"}>Sunnyside Page</Link>
+        </li>
       </ul>
     </div>
   );
