@@ -1,0 +1,66 @@
+.feedback {
+  background-color: hsl(0, 0%, 100%);
+  padding: 6rem;
+  text-align: center;
+
+  h2 {
+    letter-spacing: 4px;
+    color: hsl(210, 4%, 67%);
+    text-transform: uppercase;
+    font-family: "Fraunces";
+    font-size: 0.9rem;
+    margin-bottom: 4rem;
+  }
+}
+
+.items {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  gap: 4rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.5rem;
+  max-width: 25rem;
+  flex: 1 1 19rem;
+
+  img {
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 100px;
+  }
+
+  p {
+    line-height: 1.5;
+    color: hsl(213, 9%, 39%);
+    font-weight: 700;
+    max-width: 30rem;
+  }
+
+  .person {
+    h5 {
+      font-family: "Fraunces";
+      font-weight: 900;
+      font-size: 1.2rem;
+      color: hsl(212, 27%, 19%);
+      margin-bottom: 0.5rem;
+    }
+    span {
+      color: hsl(210, 4%, 67%);
+      font-size: 0.95rem;
+      font-weight: 700;
+    }
+  }
+}
+
+@media (max-width: 47.5em) {
+  .feedback {
+    padding: 3rem 2rem;
+  }
+}
