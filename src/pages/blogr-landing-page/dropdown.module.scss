@@ -6,6 +6,7 @@
 
 p {
   color: hsla(0, 0%, 100%, 0.8);
+  font-weight: 500;
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -46,11 +47,11 @@ p {
     font: inherit;
     font-size: 0.9rem;
     color: hsl(207, 13%, 34%);
-    transition: all 0.3s;
+    transition: all 0.15s;
     display: block;
 
     &:hover {
-      font-weight: bold;
+      font-weight: 500;
     }
   }
 }

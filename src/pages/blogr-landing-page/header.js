@@ -2,6 +2,7 @@ import styles from "./header.module.scss";
 import logo from "../../assets/blogr-landing-page-main/images/logo.svg";
 import DropDown from "./dropdown";
 import { useState } from "react";
+import HeaderIntro from "./header-intro";
 
 const linksData = [
   { title: "Product", links: ["Shop", "Categories", "Discounts"] },
@@ -37,11 +38,14 @@ const Header = () => {
               <a href="/">Login</a>
             </li>
             <li>
-              <a href="/">Signup</a>
+              <a className={styles.cta} href="/">
+                Signup
+              </a>
             </li>
           </ul>
         </nav>
       </div>
+      <HeaderIntro />
     </header>
   );
 };

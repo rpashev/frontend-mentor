@@ -3,10 +3,9 @@
       left 20% top 50% / 190% no-repeat,
     linear-gradient(rgb(253, 131, 97), rgb(252, 74, 95));
 
-  height: 70vh;
   width: 100%;
   border-bottom-left-radius: 100px;
-  padding: 3rem 8rem;
+  padding: 3rem 8rem 6rem;
 }
 
 .navbar {
@@ -19,6 +18,7 @@
     display: flex;
     align-items: center;
     flex: 1;
+    font-family: "Ubuntu";
 
     ul {
       list-style: none;
@@ -28,7 +28,7 @@
 
     .actions {
       margin-left: auto;
-      gap: 1rem;
+
       a {
         font: inherit;
         color: hsla(0, 0%, 100%, 0.8);
@@ -37,13 +37,20 @@
         padding: 0.75rem 2.2rem;
         transition: all 0.25s;
         display: block;
+        font-weight: 500;
 
         &:hover,
         &:active,
         &:focus {
           background-color: rgba(white, 0.25);
           color: hsla(0, 0%, 100%, 1);
+          outline: none;
         }
+      }
+
+      .cta {
+        background-color: hsl(0, 0%, 100%);
+        color: rgb(252, 74, 95);
       }
     }
   }
