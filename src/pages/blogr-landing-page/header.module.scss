@@ -1,0 +1,50 @@
+.header {
+  background: url("../../assets//blogr-landing-page-main/images/bg-pattern-intro-desktop.svg")
+      left 20% top 50% / 190% no-repeat,
+    linear-gradient(rgb(253, 131, 97), rgb(252, 74, 95));
+
+  height: 70vh;
+  width: 100%;
+  border-bottom-left-radius: 100px;
+  padding: 3rem 8rem;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  padding-bottom: 2rem;
+
+  nav {
+    display: flex;
+    align-items: center;
+    flex: 1;
+
+    ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
+
+    .actions {
+      margin-left: auto;
+      gap: 1rem;
+      a {
+        font: inherit;
+        color: hsla(0, 0%, 100%, 0.8);
+        text-decoration: none;
+        border-radius: 100px;
+        padding: 0.75rem 2.2rem;
+        transition: all 0.25s;
+        display: block;
+
+        &:hover,
+        &:active,
+        &:focus {
+          background-color: rgba(white, 0.25);
+          color: hsla(0, 0%, 100%, 1);
+        }
+      }
+    }
+  }
+}

@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import AdviceGenerator from "./pages/advice-generator";
 import ArticlePreview from "./pages/article-preview";
 import BaseApparel from "./pages/base-apparel";
+import BlogrLandingPage from "./pages/blogr-landing-page";
 import FaqAccordion from "./pages/faq-accordion";
 import FourCardFeature from "./pages/four-card-feature";
 import HomePage from "./pages/home";
@@ -40,6 +41,7 @@ function App() {
         <Route path="/four-card-feature" element={<FourCardFeature />} />
         <Route path="/advice-generator" element={<AdviceGenerator />} />
         <Route path="/sunnyside" element={<SunnysidePage />} />
+        <Route path="/blogr" element={<BlogrLandingPage />} />
         <Route path="*" element={<Navigate to={"/"} />} />
       </Routes>
     </BrowserRouter>

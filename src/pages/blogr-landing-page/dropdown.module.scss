@@ -1,0 +1,56 @@
+.dropdown {
+  position: relative;
+  width: 100%;
+  cursor: pointer;
+}
+
+p {
+  color: hsla(0, 0%, 100%, 0.8);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  span {
+    border-bottom: 1px solid transparent;
+  }
+
+  img {
+    display: block;
+    transition: all 0.2s;
+  }
+}
+
+.active {
+  img {
+    transform: rotate(180deg);
+  }
+  span {
+    border-bottom: 2px solid white;
+  }
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  background-color: hsl(0, 0%, 100%);
+  padding: 1.5rem;
+  border-radius: 6px;
+  width: 9rem;
+  position: absolute;
+  top: 2rem;
+  left: -50%;
+
+  a {
+    text-decoration: none;
+    font: inherit;
+    font-size: 0.9rem;
+    color: hsl(207, 13%, 34%);
+    transition: all 0.3s;
+    display: block;
+
+    &:hover {
+      font-weight: bold;
+    }
+  }
+}

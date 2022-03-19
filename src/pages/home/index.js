@@ -58,6 +58,9 @@ const HomePage = () => {
         <li>
           <Link to={"/sunnyside"}>Sunnyside Page</Link>
         </li>
+        <li>
+          <Link to={"/blogr"}>Blogr Landing Page</Link>
+        </li>
       </ul>
     </div>
   );
