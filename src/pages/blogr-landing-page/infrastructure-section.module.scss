@@ -1,0 +1,56 @@
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 6rem 0;
+  max-height: 23rem;
+  border-bottom-left-radius: 100px;
+  border-top-right-radius: 100px;
+  background: linear-gradient(hsla(237, 17%, 21%, 0.95), hsla(237, 23%, 32%, 0.95)),
+    url("../../assets/blogr-landing-page-main/images/bg-pattern-circles.svg") left -70% top
+      70% / 80% no-repeat;
+
+  img {
+    height: 32rem;
+    display: block;
+    flex-shrink: 5;
+  }
+}
+
+.content {
+  max-width: 30rem;
+  line-height: 1.6;
+  padding-right: 2.5rem;
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (max-width: 56.25em) {
+  .section {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 11rem 1fr;
+    max-height: none;
+    padding-bottom: 3rem;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0;
+
+    img {
+      position: absolute;
+      top: -25%;
+      height: 25rem;
+    }
+  }
+
+  .content {
+    grid-row: 2/3;
+    padding-right: 0;
+    width: 90%;
+    text-align: center;
+  }
+}

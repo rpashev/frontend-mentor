@@ -5,10 +5,7 @@ const DropDown = (props) => {
   const isActive = props.active === props.title ? true : false;
 
   return (
-    <li
-      className={styles.dropdown}
-      onMouseEnter={props.dropdownHandler.bind(null, props.title)}
-    >
+    <li className={styles.dropdown} onMouseEnter={props.dropdownHandler.bind(null, props.title)}>
       <p className={`${isActive && styles.active}`}>
         <span>{props.title}</span>
         <img src={arrowLight} alt="arrow"></img>

@@ -3,11 +3,21 @@ import logo from "../../assets/blogr-landing-page-main/images/logo.svg";
 import DropDown from "./dropdown";
 import { useState } from "react";
 import HeaderIntro from "./header-intro";
+import toggle from "../../assets/blogr-landing-page-main/images/icon-hamburger.svg";
 
 const linksData = [
-  { title: "Product", links: ["Shop", "Categories", "Discounts"] },
-  { title: "Company", links: ["About Us", "History", "Partners"] },
-  { title: "Connect", links: ["Contact", "Newsletter", "LinkedIn"] },
+  {
+    title: "Product",
+    links: ["Overview", "Pricing", "Marketplace", "Features", "Integrations"],
+  },
+  {
+    title: "Company",
+    links: ["About", "Team", "Blog", "Careers"],
+  },
+  {
+    title: "Connect",
+    links: ["Contact", "Newsletter", "LinkedIn"],
+  },
 ];
 
 const Header = () => {
@@ -43,6 +53,7 @@ const Header = () => {
               </a>
             </li>
           </ul>
+          <img src={toggle} alt="hamburger" className={styles.toggle}></img>
         </nav>
       </div>
       <HeaderIntro />

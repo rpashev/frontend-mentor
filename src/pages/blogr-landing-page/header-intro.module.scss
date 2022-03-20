@@ -58,3 +58,21 @@
     }
   }
 }
+
+@media (max-width: 56.25em) {
+  .intro {
+    margin-top: 2rem;
+    max-width: 95%;
+    h1 {
+      font-size: 2.4rem;
+    }
+
+    .actions {
+      gap: 1rem;
+      a {
+        font-size: 0.9rem;
+        width: 7.5rem;
+      }
+    }
+  }
+}

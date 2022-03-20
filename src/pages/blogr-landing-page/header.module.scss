@@ -56,3 +56,33 @@
     }
   }
 }
+
+.toggle {
+  display: none;
+}
+
+@media (max-width: 64.5em) {
+  .header {
+    padding: 3rem;
+    border-bottom-left-radius: 0;
+  }
+}
+
+@media (max-width: 56.25em) {
+  .header {
+    padding: 2rem;
+  }
+
+  .navbar {
+    nav {
+      justify-content: flex-end;
+      ul {
+        display: none;
+      }
+    }
+  }
+
+  .toggle {
+    display: block;
+  }
+}

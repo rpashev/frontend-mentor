@@ -1,0 +1,49 @@
+.footer {
+  width: 100%;
+  background-color: hsl(240, 10%, 16%);
+  padding: 4rem 8rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-top-right-radius: 100px;
+
+  h5 {
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    a {
+      text-decoration: none;
+      font: inherit;
+      font-size: 0.9rem;
+      color: hsl(240, 2%, 79%);
+      cursor: pointer;
+
+      &:hover,
+      &:active,
+      &:focus {
+        border-bottom: 2px solid hsl(240, 2%, 79%);
+      }
+    }
+  }
+}
+
+@media (max-width: 56.25em) {
+  .footer {
+    padding: 4rem 0;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+    gap: 2rem;
+    border-top-right-radius: 0;
+
+    img {
+      margin-bottom: 2rem;
+    }
+  }
+}

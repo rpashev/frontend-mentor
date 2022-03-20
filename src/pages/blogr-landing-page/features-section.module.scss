@@ -1,0 +1,63 @@
+.section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  position: relative;
+  color: hsl(208, 49%, 24%);
+  line-height: 1.6;
+  padding: 18rem 0;
+
+  .desktop {
+    display: block;
+    width: 66%;
+    position: absolute;
+    left: -19%;
+  }
+}
+
+.content {
+  display: flex;
+  grid-column: 2/3;
+  flex-direction: column;
+  gap: 3rem;
+  max-width: 30rem;
+  padding-right: 2.5rem;
+
+  h2 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    color: hsl(208, 49%, 24%);
+    max-width: 33rem;
+  }
+}
+
+.mobile {
+  display: none;
+}
+
+@media (max-width: 56.25em) {
+  .section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 3rem 0;
+    text-align: center;
+
+    .desktop {
+      display: none;
+    }
+
+    .mobile {
+      display: block;
+      max-width: 100%;
+    }
+  }
+
+  .content {
+    max-width: 90%;
+    padding-right: 0;
+  }
+}
