@@ -13,6 +13,7 @@ import OrderSummary from "./pages/order-summary";
 import PingSingleColumn from "./pages/ping-single-column";
 import ProfileCard from "./pages/profile-card";
 import QRCode from "./pages/qr-code";
+import RatingComponent from "./pages/rating-component";
 import SinglePriceGrid from "./pages/single-price-grid";
 import SocialProof from "./pages/social-proof-section";
 import StatsPreview from "./pages/stats-preview-card";
@@ -42,6 +43,7 @@ function App() {
         <Route path="/advice-generator" element={<AdviceGenerator />} />
         <Route path="/sunnyside" element={<SunnysidePage />} />
         <Route path="/blogr" element={<BlogrLandingPage />} />
+        <Route path="/rating-component" element={<RatingComponent />} />
         <Route path="*" element={<Navigate to={"/"} />} />
       </Routes>
     </BrowserRouter>

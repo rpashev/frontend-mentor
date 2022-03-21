@@ -18,9 +18,7 @@ const HomePage = () => {
           <Link to={"/stats-preview"}>Stats Preview Component</Link>
         </li>
         <li>
-          <Link to={"/three-column-preview"}>
-            Three Column Preview Component
-          </Link>
+          <Link to={"/three-column-preview"}>Three Column Preview Component</Link>
         </li>
         <li>
           <Link to={"/profile-card"}>Profile Card Component</Link>
@@ -60,6 +58,9 @@ const HomePage = () => {
         </li>
         <li>
           <Link to={"/blogr"}>Blogr Landing Page</Link>
+        </li>
+        <li>
+          <Link to={"/rating-component"}>Rating Component</Link>
         </li>
       </ul>
     </div>
