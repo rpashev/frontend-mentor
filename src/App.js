@@ -11,6 +11,7 @@ import IntroSignup from "./pages/intro-signup";
 import NftCard from "./pages/nft-card";
 import OrderSummary from "./pages/order-summary";
 import PingSingleColumn from "./pages/ping-single-column";
+import PricingToggleComponent from "./pages/pricing-toggle";
 import ProfileCard from "./pages/profile-card";
 import QRCode from "./pages/qr-code";
 import RatingComponent from "./pages/rating-component";
@@ -44,6 +45,7 @@ function App() {
         <Route path="/sunnyside" element={<SunnysidePage />} />
         <Route path="/blogr" element={<BlogrLandingPage />} />
         <Route path="/rating-component" element={<RatingComponent />} />
+        <Route path="/pricing-toggle" element={<PricingToggleComponent />} />
         <Route path="*" element={<Navigate to={"/"} />} />
       </Routes>
     </BrowserRouter>

@@ -62,6 +62,9 @@ const HomePage = () => {
         <li>
           <Link to={"/rating-component"}>Rating Component</Link>
         </li>
+        <li>
+          <Link to={"/pricing-toggle"}>Pricing Toggle Component</Link>
+        </li>
       </ul>
     </div>
   );
