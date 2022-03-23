@@ -65,6 +65,9 @@ const HomePage = () => {
         <li>
           <Link to={"/pricing-toggle"}>Pricing Toggle Component</Link>
         </li>
+        <li>
+          <Link to={"/insure-landing-page"}>Insure Landing Page</Link>
+        </li>
       </ul>
     </div>
   );

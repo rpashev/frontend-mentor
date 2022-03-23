@@ -7,6 +7,7 @@ import FaqAccordion from "./pages/faq-accordion";
 import FourCardFeature from "./pages/four-card-feature";
 import HomePage from "./pages/home";
 import HuddleLandingPage from "./pages/huddle-landing-page";
+import InsureLandingPage from "./pages/insure-landing-page";
 import IntroSignup from "./pages/intro-signup";
 import NftCard from "./pages/nft-card";
 import OrderSummary from "./pages/order-summary";
@@ -46,6 +47,7 @@ function App() {
         <Route path="/blogr" element={<BlogrLandingPage />} />
         <Route path="/rating-component" element={<RatingComponent />} />
         <Route path="/pricing-toggle" element={<PricingToggleComponent />} />
+        <Route path="/insure-landing-page" element={<InsureLandingPage />} />
         <Route path="*" element={<Navigate to={"/"} />} />
       </Routes>
     </BrowserRouter>
