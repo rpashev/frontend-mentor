@@ -4,24 +4,23 @@
   min-height: 100vh;
   display: grid;
   place-items: center;
+  color: #ffffff;
 
-  ul {
-    list-style: none;
+  ol {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     gap: 0.5rem 1rem;
     width: 60%;
 
     li {
+      &:hover {
+        color: yellow;
+      }
       a {
         text-decoration: none;
         font: inherit;
-        color: #ffffff;
+        color: currentColor;
         display: block;
-      }
-
-      a:hover {
-        color: yellow;
       }
     }
   }

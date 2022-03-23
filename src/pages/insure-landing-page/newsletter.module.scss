@@ -1,0 +1,67 @@
+.section {
+  background: hsl(256, 26%, 20%);
+  color: hsl(0, 0%, 98%);
+  position: relative;
+  padding: 0 8rem;
+  height: 16rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5rem;
+
+  img {
+    position: absolute;
+    right: 0;
+    height: 100%;
+  }
+
+  h2 {
+    font-size: 3rem;
+    font-family: "DM Serif Display";
+    font-weight: 400;
+  }
+
+  button {
+    font: inherit;
+    background-color: transparent;
+    padding: 0.5rem 1.5rem;
+    color: hsl(0, 0%, 98%);
+    border: 2px solid hsl(0, 0%, 98%);
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.25s;
+    z-index: 10;
+
+    &:hover,
+    &:focus,
+    &:active {
+      outline: none;
+      background-color: hsl(0, 0%, 98%);
+      color: hsl(256, 26%, 20%);
+    }
+  }
+}
+
+@media (max-width: 56.25em) {
+  .section {
+    height: auto;
+    padding: 3rem 1rem;
+    justify-content: space-around;
+
+    h2 {
+      font-size: 2.3rem;
+    }
+  }
+}
+
+@media (max-width: 40em) {
+  .section {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+}

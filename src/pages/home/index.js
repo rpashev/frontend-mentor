@@ -4,7 +4,7 @@ import styles from "./index.module.scss";
 const HomePage = () => {
   return (
     <div className={styles.home}>
-      <ul>
+      <ol>
         <li>
           <Link to={"/qr-code"}>QR Code Component</Link>
         </li>
@@ -68,7 +68,7 @@ const HomePage = () => {
         <li>
           <Link to={"/insure-landing-page"}>Insure Landing Page</Link>
         </li>
-      </ul>
+      </ol>
     </div>
   );
 };
