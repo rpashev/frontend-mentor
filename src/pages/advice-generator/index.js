@@ -29,18 +29,12 @@ const AdviceGenerator = () => {
   return (
     <div className={styles.page}>
       <div className={styles.card}>
-        <h2>Advice # {advice.id}</h2>
-        <p>&#8220;{advice.advice}&#8221;</p>
+        <h2>Advice # {advice?.id || ""}</h2>
+        <p>&#8220;{advice?.advice || ""}&#8221;</p>
         <img src={divider} alt="divider" className={styles.divider}></img>
-        <img
-          src={dividerMobile}
-          alt="divider"
-          className={styles.dividerMobile}
-        ></img>
+        <img src={dividerMobile} alt="divider" className={styles.dividerMobile}></img>
         {error && (
-          <p className={styles.error}>
-            Could not give give advice, hopeless case!
-          </p>
+          <p className={styles.error}>Could not give give advice, hopeless case!</p>
         )}
         <button onClick={adviceHandler}>
           <img src={dice} alt="dice button"></img>
